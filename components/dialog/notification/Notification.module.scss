@@ -1,0 +1,15 @@
+
+
+.container{ 
+    @apply flex flex-row gap-4 items-center justify-start;
+    .iconContainer{
+        @apply p-2 flex flex-row justify-center items-center;
+    }
+    .contentContainer{
+        @apply flex flex-col  gap-1;
+        .message{
+            @apply pb-0 mb-0;
+            @apply text-base font-semibold text-black_6 tracking-wider;
+        }
+    }
+}

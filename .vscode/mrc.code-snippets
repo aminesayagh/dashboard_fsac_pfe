@@ -1,0 +1,123 @@
+{
+	"my react components": {
+		"prefix": "mrc",
+		"body": [
+			"// global resources",
+			"import React from 'react'",
+			"",
+			"// style",
+			"import StyleNameCaretaker from '@/helpers/ClassNameCreator'",
+			"import ${TM_FILENAME_BASE}Style from './${TM_FILENAME_BASE}.module.scss'",
+			"const cg = StyleNameCaretaker(${TM_FILENAME_BASE}Style)",
+			"",
+			"const ${TM_FILENAME_BASE} = ({ }) => {",
+			"	",
+			"	return (",
+			"		<>",
+			"			$1",
+			"		</>",
+			"	)",
+			"}",
+			"",
+			"export default ${TM_FILENAME_BASE};"
+		],
+		"description": "my react components"
+	},
+	"my react components with type": {
+		"prefix": "mrct",
+		"body": [
+			"// global resources",
+			"import React , { FC } from 'react'",
+			"",
+			"// style",
+			"import StyleNameCaretaker from '@/helpers/ClassNameCreator';",
+			"import ${TM_FILENAME_BASE}Style from './${TM_FILENAME_BASE}.module.scss';",
+			"const cg = StyleNameCaretaker(${TM_FILENAME_BASE}Style);",
+			"",
+			"// interne resources",
+			"import { Props } from './${TM_FILENAME_BASE}Type'",
+			"",
+			"const ${TM_FILENAME_BASE}:FC<Props> = ({ $2 }) => {",
+			"	",
+			"	return (",
+			"		<>",
+			"			$1",
+			"		</>",
+			"	)",
+			"}",
+			"",
+			"export default ${TM_FILENAME_BASE};"
+		],
+		"description": "my react components typed"
+	},
+	"my try catch": {
+		"prefix": "tc",
+		"body": [
+			"try{",
+			"	$2"
+			"} catch(err) {",
+			"	console.log('error in $1', err);",
+			"}"
+		],
+		"description": "my try catch gestioner"
+	},
+	"default Exporting": {
+		"prefix": "de",
+		"body": ["export { default } from './$1'"],
+		"description": "my default export"
+	},
+	"add new story book file": {
+		"prefix": "sb",
+		"body": [
+			"import React from 'react'",
+			"import { ComponentMeta, ComponentStory } from '@storybook/react'",
+			"import ${TM_FILENAME/.stories.tsx//g} from './${TM_FILENAME/.stories.tsx//g}'",
+			"",
+			"export default {",
+			"	title: '$1/${TM_FILENAME/.stories.tsx//g}',",
+			"	component: ${TM_FILENAME/.stories.tsx//g}",
+			"} as ComponentMeta<typeof ${TM_FILENAME/.stories.tsx//g}>",
+			"",
+			"const Template: ComponentStory<typeof ${TM_FILENAME/.stories.tsx//g}> = args => <${TM_FILENAME/.stories.tsx//g} {...args} />;",
+			"",
+			"export const Primary = Template.bind({ })"
+		],
+		"description": "modele story book file"
+	},
+	"add new story book file with store": {
+		"prefix": "sbs",
+		"body": [
+			"import React from 'react'",
+			"import { ComponentMeta, ComponentStory } from '@storybook/react'",
+			"import ${TM_FILENAME/.stories.tsx//g} from './${TM_FILENAME/.stories.tsx//g}'",
+			"",
+			"import Mockstore from 'lib/MockStore';",
+			"",
+			"export default {",
+			"	title: '$1/${TM_FILENAME/.stories.tsx//g}',",
+			"	component: ${TM_FILENAME/.stories.tsx//g},",
+			"	decorators: [(story) =>",
+			"		<Mockstore>{story()}</Mockstore>",
+			"	]",
+			"} as ComponentMeta<typeof ${TM_FILENAME/.stories.tsx//g}>",
+			"",
+			"const Template: ComponentStory<typeof ${TM_FILENAME/.stories.tsx//g}> = args => <${TM_FILENAME/.stories.tsx//g} {...args} />;",
+			"",
+			"export const Primary = Template.bind({ })"
+		],
+		"description": "modele story book file"
+	},
+	"add new className": {
+		"prefix": "c",
+		"body": ["{...cg('$1', '$2')}"],
+		"description": "Add new className"
+	},
+	"add balise": {
+		"prefix": "b",
+		"body": [
+			"<$1 {...cg('$2', '$3')} >",
+			"	$4",
+			"</$1>"
+		]
+	}
+}

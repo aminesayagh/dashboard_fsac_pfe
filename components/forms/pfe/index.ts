@@ -1,0 +1,1 @@
+export { default as PostPfe }  from './post';

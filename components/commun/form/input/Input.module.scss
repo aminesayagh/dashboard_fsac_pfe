@@ -1,0 +1,19 @@
+@import '../../../../styles/text.scss';
+
+.content{
+    @apply text-black_5;
+    .marker{
+        @apply text-black_2 text-medium;
+    }
+}
+.delete{
+    @apply cursor-pointer;
+}
+.cart_container{
+    @apply flex flex-row gap-4 justify-start items-center w-full;
+    
+}
+
+.error{
+    @apply text-xxs text-error_1;
+}

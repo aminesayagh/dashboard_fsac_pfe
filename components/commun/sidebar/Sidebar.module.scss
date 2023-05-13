@@ -1,0 +1,8 @@
+@import 'styles/text.scss';
+
+.title{
+    @apply px-4 md:px-6;
+    .text{
+        @apply title_h5 text-black_7/80;
+    }
+}

@@ -1,0 +1,24 @@
+
+
+._card_shadow {
+    @apply shadow-lg;
+    &.card_category{
+        @each $category, $shadow-color in $shadow-colors {
+            &_#{$category}{
+                @apply shadow-#{$shadow-color};
+            }
+        }
+    }
+}
+
+._card_border {
+    @apply border;
+    &.card_category{
+        @each $category, $border-color in $border-colors {
+            &_#{$category}{
+                @apply border-#{$border-color};
+            }
+        }
+    }
+    @apply border-black_10/80;
+}

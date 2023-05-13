@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './text.scss';
+@import './container.scss';
+
+:root{
+    --font-inter: 'Roboto', sans-serif;
+}
+@layer base{
+    body{
+        @apply font-sans;
+    }
+    
+    button, h1, h2, h3, h4, h5, h6, input, optgroup, select, textarea{
+        @apply font-sans font-semibold;
+    }
+    main{
+        @apply bg-white_2;
+    }
+}

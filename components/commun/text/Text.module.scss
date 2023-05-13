@@ -1,0 +1,25 @@
+@import '../../../styles/text.scss';
+
+.text_title{
+    &_h1{
+        @apply title_h1 text_black_5;
+    }
+    &_h2{
+        @apply title_h2;
+    }
+    &_h3{
+        @apply title_h3;
+    }
+    &_h4{
+        @apply title_h4;
+    }
+    &_h5{
+        @apply title_h5;
+    }
+    &_h6{
+        @apply title_h6;
+    }
+    &.text_child_card{
+        @apply hidden;
+    }
+}

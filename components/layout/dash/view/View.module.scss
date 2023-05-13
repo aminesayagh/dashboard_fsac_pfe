@@ -1,0 +1,8 @@
+@import 'styles/text.scss';
+
+.view_title{
+    @apply py-12 gap-y-8 flex flex-col;
+    .title{
+        @apply title_h2;
+    }
+}

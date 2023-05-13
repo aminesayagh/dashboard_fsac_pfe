@@ -1,0 +1,10 @@
+
+@import 'styles/text.scss';
+
+.item{
+    @apply text-medium text-black_5;
+}
+
+.option{
+    @apply text-medium capitalize px-2 py-2;
+}

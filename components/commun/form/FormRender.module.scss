@@ -1,0 +1,8 @@
+
+
+.form_container{
+    @apply flex flex-col gap-y-6 h-full;
+    .form_button{
+        @apply pt-3 pb-6;
+    }
+}

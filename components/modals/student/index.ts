@@ -1,0 +1,1 @@
+export { StudentView } from './StudentEdit'

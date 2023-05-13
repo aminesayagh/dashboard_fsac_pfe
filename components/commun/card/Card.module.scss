@@ -1,0 +1,65 @@
+$back-colors: ("error": "error_4/30", "success": "valid_4/30");
+$shadow-colors: ("error": "error_2/20", "warning": "black_7/20", "success": "valid_1/20", "info": "black_7/20");
+$border-colors: ("error": "error_2", "warning": "black_10/80", "success": "valid_1", "info": "black_10/80");
+$grey-color: "black_10";
+
+@import "./cardVariation.scss";
+
+.card{
+    @apply flex-col;
+    &_message {
+        &_error{
+            @apply border-error_1 bg-error_5;
+        }
+        &_success{
+            @apply border-valid_1 bg-valid_5;
+        }
+    }
+    &_size {
+    }
+
+    .body, .header, .footer{
+        &_size{
+            &_xs{}
+            &_md{
+                @apply px-8;
+            }
+        }
+        @apply w-full;
+    }
+}
+
+.col{
+    @apply flex flex-col w-auto;
+    &_align{
+        &_center{
+            @apply items-center;
+        }
+        &_start{
+            @apply items-start;
+        }
+        &_end{
+            @apply items-end;
+        }
+        &_between {
+            // @apply items-between;
+        }
+    }
+}
+.row{
+    @apply flex flex-row min-w-full gap-3 items-center;
+    &_align{
+        &_center{
+            @apply justify-center;
+        }
+        &_start{
+            @apply justify-start;
+        }
+        &_end{
+            @apply justify-end;
+        }
+        &_between {
+            @apply justify-between;
+        }
+    }
+}

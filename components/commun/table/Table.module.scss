@@ -1,0 +1,11 @@
+.right_mode{
+    @apply flex flex-row gap-3 items-center justify-end;
+    .right_mode_item{
+        @apply flex flex-row gap-3 items-center justify-start px-4 py-2 cursor-pointer;
+    }
+}
+
+
+.grid_posts{
+    @apply grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-5 gap-y-8;
+}

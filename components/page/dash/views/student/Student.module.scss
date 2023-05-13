@@ -1,0 +1,4 @@
+
+.grid_posts{
+    @apply grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-5 gap-y-8;
+}

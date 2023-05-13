@@ -1,0 +1,11 @@
+@use "sass:list";
+
+@function break($breakpoint) {
+    $result: '';
+
+    @if $breakpoint !="none" {
+        $result: $breakpoint + ':';
+    }
+
+    @return $result;
+}

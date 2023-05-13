@@ -1,0 +1,13 @@
+.container_section{
+    @apply mx-auto;
+    @apply w-full max-w-full 2xl:max-w-[1400px] 3xl:max-w-[1480px];
+    &_small{
+        @apply px-8 md:px-12 lg:px-40 xl:px-52 3xl:px-60;
+    }
+    &_medium{
+        @apply px-8 md:px-12 lg:px-16;
+    }
+    &_large{
+        @apply px-8 md:px-12 lg:px-10 2xl:px-0;
+    }
+}

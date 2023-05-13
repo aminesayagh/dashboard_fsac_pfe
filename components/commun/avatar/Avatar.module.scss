@@ -1,0 +1,41 @@
+
+@import 'styles/text.scss';
+
+.avatar{
+    @apply flex flex-row items-center gap-x-4 justify-center;
+    .content{
+        @apply flex flex-col items-start;
+        &_back{
+            &_dark{
+                h5{
+                    @apply  text-black_2/70;
+                }
+                h4{
+                    @apply  text-black_2;
+                }
+            }
+            &_light{
+                h5{
+                    @apply  text-white_5;
+                }
+                h4{
+                    @apply  text-white_4;
+                }
+            }
+        }
+        &_size{
+            &_md, &_sm, &_xs{
+                .text{
+                    @apply title_h5;
+                }
+            }
+            &_lg, &_xl{
+                .text{
+                    @apply title_h4;
+                }
+            }
+            
+        }
+        
+    }
+}

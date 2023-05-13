@@ -1,0 +1,24 @@
+@import 'styles/container.scss';
+@import 'styles/text.scss';
+
+.home_intro{
+    @apply flex flex-col justify-center items-center;
+    @apply min-h-screen container_section container_section_small;
+    @apply gap-y-10 sm:gap-y-16 py-12 xs:py-24;
+    .home_content{
+        @apply flex flex-col justify-center gap-4;
+    }
+    *{
+        @apply text-center;
+        h1{
+            @apply title_h1;
+        }
+        p{
+            @apply text-extra-large text-black_8;
+        }
+    }
+    .action{
+        @apply flex flex-col xs:flex-row gap-4;
+    }
+}
+

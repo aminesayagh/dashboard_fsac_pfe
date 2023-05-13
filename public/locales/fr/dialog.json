@@ -1,0 +1,19 @@
+{
+    "validate_student_account": {
+        "description": "Vous etes sur d'avoir verifier le compte etudiant ?"
+    },
+    "validation_accout_by_admin": {
+        "description": "Votre compte est en attente de validation par l'administrateur de l'application",
+        "mainAction": "Modifier Vos Information de Profile"
+    },
+    "add_groupe_pfe": {
+        "title": "Ajouter un groupe de PFE",
+        "description": "Chaque etudiant a le droit de participer a un seul groupe de PFE, si n'ete pas interesser au participation a un groupe pfe deja present, vous pouvez en creer un nouveau",
+        "mainAction": "Ajouter"
+    },
+    "invite_member_pfe": {
+        "title": "Inviter un membre",
+        "description": "Vous pouvez inviter un membre a votre groupe de PFE, il recevra une notification et il pourra accepter ou refuser votre invitation",
+        "mainAction": "Inviter"
+    }
+}

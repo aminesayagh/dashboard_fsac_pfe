@@ -1,0 +1,45 @@
+@use "sass:list";
+@import './break.scss';
+@mixin flexMatrice($list, $child) {
+    @apply flex;
+
+    @each $breakpoint,
+    $values in $list {
+        $direction: nth($values, 1); // row, col
+        $space_x: nth($values, 2); // col: %, row: rem
+        $space_y: nth($values, 3); // col: rem, row: rem
+
+        $b: break($breakpoint);
+
+        @apply #{$b}flex-#{$direction};
+        $width: calc(100 - $space_x * 2);
+
+
+        @if $direction=='col' {
+            >* {
+                @apply #{$b}w-[#{$width}%];
+            }
+        } @else {
+            >* {
+                @apply #{$b}w-full;
+            }
+        }
+
+        @for $i from 1 through $child {
+            @if $i>1 {
+                >*:nth-child(#{$i}) {
+                    @if $direction=='col' {
+                        $margin_x: calc(100 - (100 - $space_x * ($i - 1)));
+                        @apply #{$b}ml-[#{$margin_x}%] #{$b}mr-[-#{$margin_x}%];
+                        @apply #{$b}mt-[#{$space_y}rem];
+                    } @else if $direction=='row' {
+                        @apply #{$b}ml-[#{$space_x}rem] #{$b}mr-0;
+                        @apply #{$b}mt-[calc(#{$space_y}rem_*_#{$i - 1})];
+                    }
+                }
+            }
+        }
+    }
+
+    @content;
+}

@@ -1,0 +1,9 @@
+
+@import 'styles/text.scss';
+
+.user_att{
+    @apply title_h6;
+}
+.user_value{
+    @apply text-small text-black_7 capitalize;
+}

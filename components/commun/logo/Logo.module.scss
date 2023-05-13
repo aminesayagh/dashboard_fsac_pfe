@@ -1,0 +1,7 @@
+@import '../../../styles/text.scss';
+.logo_container{
+    @apply flex flex-row gap-x-2 justify-center items-center;
+    p{
+        @apply text-extra-large text-black_7;
+    }
+}

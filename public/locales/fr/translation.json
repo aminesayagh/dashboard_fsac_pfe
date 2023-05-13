@@ -1,0 +1,286 @@
+{
+  "identity": {
+    "logoName": "FSAC",
+    "logoAlt": "Faculty hassan 2 logo"
+  },
+  "intro": {
+    "title": "Simplifiez la gestion de vos projets de fin d'étude avec notre application PFE de la Faculté Hassan 2 de Casablanca",
+    "body": "Bienvenu a votre espace de gestion des projets de fin d'étude (PFE) pour la Faculté Hassan 2 de Casablanca. Cette application est conçue pour faciliter la coordination et la gestion des PFE pour les étudiants et les professeurs. Nous sommes fiers de pouvoir offrir cet outil pour améliorer la qualité des PFE et faciliter la communication entre les parties concernées. Bienvenue sur notre application, nous espérons qu'elle répondra à vos besoins en matière de gestion des PFE.",
+    "action": "S'identifier",
+    "actionSecondary": "S'inscrire"
+  },
+  "header": {
+    "login": "Se Connecter"
+  },
+  "view": {
+    "visitor": {
+      "welcome": "Bienvenu a votre compte"
+    },
+    "groupe_pfe": {
+      "title": "Groupes PFEs"
+    },
+    "project": {
+      "title": "Projets du PFE"
+    },
+    "professor": {
+      "title": "Professeurs"
+    },
+    "student": {
+      "title": "Etudiants"
+    },
+    "profile": {
+      "title": "Profile"
+    },
+    "home": {
+      "title": "Page Principale"
+    }
+  },
+  "widget": {
+    "options": {
+      "title": "List options",
+      "add": "Ajouter une nouvelle option",
+      "modal": {
+        "title": "Ajouter une option"
+      }
+    },
+    "postPfeGroupe": {
+      "title": "Ajouter un nouveau groupe PFE",
+      "button": "Creer"
+    }
+  },
+  "profile": {
+    "signAs": "Connecter en temps que",
+    "logOut": "Se Deconnecter",
+    "welcome": "Bienvenu a votre compte",
+    "profile": "Profile",
+    "update profile image": {
+      "title": "Edit profile image"
+    },
+    "update profile": {
+      "title": "Edit profile"
+    },
+    "update password": {
+      "title": "Edit password"
+    }
+  },
+  "provider": {
+    "Google": "Se connecter par google pour etudiants"
+  },
+  "itemsSidebar": {
+    "update profile image": "Image de profile",
+    "update profile": "Information de Profile",
+    "update password": "Modifier Mot de passe"
+  },
+  "menu": {
+    "dash": {
+      "home": "Tableau de bord",
+      "groupe_pfe": "Pfe",
+      "professor": "Profeseur",
+      "project": "Projet",
+      "student": "Etudiant",
+      "profile": "Profile"
+    }
+  },
+  "pfe": {
+    "add_groupe_pfe": "Ajouter un nouveau groupe PFE"
+  },
+  "models": {
+    "auth": {
+      "title": "Se Connecter",
+      "change": "J'ai toujours pas de compte"
+    },
+    "signUp": {
+      "title": "S'inscrire",
+      "change": "J'ai deja un compte"
+    }
+  },
+  "views": {
+    "not visitor": {
+      "title": "Error de status"
+    },
+    "new visitor": {
+      "title": "Rempliser vos information de profile"
+    },
+    "visitor with profile and without student profile": {
+      "title": "Rempliser vos information de scolariter"
+    },
+    "visitor with profile and with student profile": {
+      "title": "Valider votre compte etudiant"
+    },
+    "student without profile image": {
+      "title": "Ajouter votre image de profile presentative"
+    }
+  },
+  "notifications": {
+    "signUp": {
+      "message": "Votre compte a été créer avec succés, vous pouvez vous connecter maintenant"
+    },
+    "validation_accout_by_admin": {
+      "message": "Votre compte est en attente de validation par l'administrateur de l'application",
+      "action": "Modifier Vos Information de Profile"
+    }
+  },
+  "table": {
+    "columns": {
+      "user": {
+        "first_name": "Nom",
+        "last_name": "Prenom",
+        "email": "Email",
+        "role": "Role",
+        "img": "Image"
+      }
+    }
+  },
+  "message": {
+    "validate_student_account": "Vous etes sur d'avoir verifier le compte etudiant ?"
+  },
+  "form": {
+    "error": {
+      "required": "Ce champ est requis",
+      "email": "Veuillez saisir une adresse email valide",
+      "min": "Veuillez saisir au moins {{min}} caractères",
+      "max": "Veuillez saisir au plus {{max}} caractères",
+      "minLength": "Veuillez saisir au moins {{min}} caractères",
+      "maxLength": "Veuillez saisir au plus {{max}} caractères",
+      "minValue": "Veuillez saisir une valeur supérieure ou égale à {{min}}",
+      "maxValue": "Veuillez saisir une valeur inférieure ou égale à {{max}}",
+      "repeatPassword": "Veuillez saisir le même mot de passe",
+      "pattern": "Veuillez vérifier ce champ",
+      "fileSizeLimit": "Le fichier {{name}} importer depasse la taille maximale autorisée {{fileSizeMax}}.Mo, Essaie d'optimer le fichier avant un nouvelle importation",
+      "fileNotExist": "Ajouter une media a publier",
+      "fileErrorServer": "Error d'ajoute de fichier au serveur",
+      "CredentialsSignin": "Error server, verifier avec le developer",
+      "fileType": "Type de fichier {{fileType}} pour le fichier {{name}} non autorisé",
+      "fileSize": "Taille de fichier {{fileSize}} pour le fichier {{name}} non autorisé",
+      "fileCount": "Nombre de fichier {{fileCount}} pour le fichier {{name}} non autorisé",
+      "fileCountLimit": "Le nombre de fichier {{fileCount}} pour le fichier {{name}} depasse le nombre maximale autorisé {{fileCountMax}}",
+      "api": {
+        "responseUndefined": "Aucun reponse n'est recu du serveur veuille esaie ultairieurement",
+        "404": "Aucun correspondant n'est trouver",
+        "send": "Error authorization, verifier avec le developer",
+        "UserDontExist": "Utilisateur n'exist pas",
+        "wrongPassword": "Votre mot de passe d'origine est faut",
+        "errorServer": "Error en reponse du serveur",
+        "errorServer500": "Error en reponse du serveur",
+        "alreadyExist": "Ce {{field}} est deja utiliser"
+      },
+      "user exist": "Cette Email address est deja utiliser",
+      "email not found": "Cette Email address n'est pas trouver",
+      "wrong password":"Votre mot de passe d'origine est faut",
+      "user not found": "Utilisateur n'exist pas",
+      "failed to create user": "Error en creation de compte"
+    },
+    "success": {
+      "update": "Mise a jour avec succes",
+      "create": "Creation avec succes",
+      "delete": "Suppression avec succes",
+      "send": "Envoie avec succes",
+      "api": {
+        "send": "Envoie avec succes"
+      }
+    },
+    "field": {
+      "email": {
+        "attribute": "Email",
+        "label": "Votre Adresse Email",
+        "placeholder": "exemple@gmail.com"
+      },
+      "password": {
+        "label": "Votre Mot de passe",
+        "placeholder": "************"
+      },
+      "repeatPassword": {
+        "label": "Repeter votre mot de passe",
+        "placeholder": "************"
+      },
+      "last_password": {
+        "label": "Votre Mot de passe actuel",
+        "placeholder": "*********"
+      },
+      "new_password": {
+        "label": "Votre Nouveau Mot de passe",
+        "placeholder": "*********"
+      },
+      "repeat_new_password": {
+        "label": "Répétez votre nouveau mot de passe",
+        "placeholder": "*********"
+      },
+      "last_name": {
+        "attribute": "Nom de famille",
+        "label": "Votre Nom de famille",
+        "placeholder": "Nom de famille"
+      },
+      "first_name": {
+        "attribute": "Nom Personnel",
+        "label": "Votre Nom Personnel",
+        "placeholder": "Nom Personnel"
+      },
+      "gender": {
+        "label": "Votre genre",
+        "placeholder": "Genre",
+        "values": {
+          "1": "Masculin",
+          "2": "Féminin"
+        }
+      },
+      "cin": {
+        "attribute": "Code CIN",
+        "label": "Votre CIN",
+        "placeholder": "CIN"
+      },
+      "address": {
+        "label": "Votre Adresse",
+        "placeholder": "Adresse"
+      },
+      "img": {
+        "label": "Votre image de profile",
+        "placeholder": "Importer votre image de profile",
+        "motivation":
+          "Ajouter votre image de profile presentative pour que les autres utilisateurs puissent vous reconnaître, vous pouvez importer une image de votre ordinateur ou prendre une photo avec votre appareil photo"
+      },
+      "cne": {
+        "attribute": "Code CNE",
+        "label": "Votre code CNE",
+        "placeholder": "Entrez votre code CNE"
+      },
+      "studentNum": {
+        "label": "Votre numéro d'étudiant",
+        "placeholder": "Entrez votre numéro d'étudiant"
+      },
+      "option": {
+        "attribute": "Option du semestre",
+        "label": "Votre option du semestre",
+        "placeholder": "Entrez votre option du semestre",
+        "values": {
+          "database": "Base de données",
+          "reseau": "Systèmes et Reseaux",
+          "sid": "Systèmes d'information Décisionnelles"
+        }
+      },
+      "remember": {
+        "label": "Se souvenir de moi"
+      }
+    },
+    "action": {
+      "login": "Se connecter",
+      "register": "S'inscrire",
+      "update": "Mettre a jour",
+      "importImage": "Importer",
+      "updateImage": "Mettre a jour",
+      "updatePassword": "Mettre a jour votre mot de passe",
+      "updateProfile": "Mettre a jour votre profile",
+      "updateStudentProfile": "Mettre a jour votre profile etudiant",
+      "updateStudentImage": "Mettre a jour votre image de profile",
+      "updateStudentProfileImage": "Mettre a jour votre profile etudiant et votre image de profile",
+      "updateVisitor": "Mettre a jour votre profile visiteur",
+      "updateVisitorImage": "Mettre a jour votre image de profile",
+      "updateVisitorProfileImage": "Mettre a jour votre profile visiteur et votre image de profile",
+      "updateVisitorStudentProfile": "Mettre a jour votre profile visiteur et votre profile etudiant",
+      "validStudent": "Valider le profile d'etudiant",
+      "validate": "Valider",
+      "cancel": "Annuler",
+      "delete": "Supprimer",
+      "send": "Envoyer"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.auth{
+    &_changeState{
+        @apply w-full flex justify-center items-center;
+        .button{
+            @apply text-sm;
+        } 
+    }
+}
